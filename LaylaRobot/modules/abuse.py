@@ -63,7 +63,7 @@ REPLY = (
     "gaye ke piche pada hai sannd tere jaise mere niche latak rehe hai do aand",
     "Teri maan ko itna chodu gha na ki wo chila chila ke thak jayagi🥲",
     "Tere jaise bacho se liye 3 puri raat gand mari wo be liye cheen",
-    "Pani kaam hai bottle me gand marunga teri hotel me😂"
+    "Pani kaam hai bottle me gand marunga teri hotel me 😂"
     )
     
 @run_async
