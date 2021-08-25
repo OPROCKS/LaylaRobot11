@@ -38,6 +38,7 @@ class Config(object):
     TEMP_DOWNLOAD_DIRECTORY = "./"
     SPAMWATCH_API = ""
     SPAMWATCH_SUPPORT_CHAT = "SpamWatchSupport"
+    HEROKU_API_KEY = ""
 
     # OPTIONAL
     ##List of id's -  (not usernames) 
