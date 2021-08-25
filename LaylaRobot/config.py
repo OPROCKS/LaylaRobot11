@@ -33,7 +33,7 @@ class Config(object):
     WEBHOOK = False
     INFOPIC = True
     URL = None
-    TEMP_DOWNLOAD_DIRECTORY = None
+    TEMP_DOWNLOAD_DIRECTORY = "./"
     SPAMWATCH_API = ""
     SPAMWATCH_SUPPORT_CHAT = "SpamWatchSupport"
 
