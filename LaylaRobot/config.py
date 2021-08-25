@@ -27,7 +27,7 @@ class Config(object):
 
     # RECOMMENDED
     SQLALCHEMY_DATABASE_URI = "postgres://uwshyespcvemss:94f41b0041f84864e78f3115797e5528ef81ad8a7bbf700b3440fc94b1277453@ec2-54-236-137-173.compute-1.amazonaws.com:5432/dcj778lvkms3df"
-    MONGO_DB_URI = ""
+    MONGO_DB_URI = "mongodb+srv://hero:hero@cluster0.2nyzp.mongodb.net/test?retryWrites=true&w=majority"
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
     WEBHOOK = False
