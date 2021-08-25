@@ -26,7 +26,7 @@ class Config(object):
     EVENT_LOGS = (-1001392103597)  # Logs Channel Id
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = "something://somewhat:user@hosturl:port/databasename"
+    SQLALCHEMY_DATABASE_URI = "mongodb+srv://hero:hero@cluster0.2nyzp.mongodb.net/test?retryWrites=true&w=majority"
     MONGO_DB_URI = ""
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
