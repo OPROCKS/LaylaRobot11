@@ -24,11 +24,11 @@ class Config(object):
     HEROKU_APP_NAME = ""
     SUPPORT_CHAT = "AwesomeSupport"  # Your own group for support, do not add the @
     JOIN_LOGGER = (-1001392103597)
-    EVENT_LOGS = (-1001392103597)  # Logs Channel Id
-
-    # RECOMMENDED
+    EVENT_LOGS = (-1001392103597)  # Logs Channel Id do not add the @
     DATABASE_URL = getenv("DATABASE_URL", "")
     MONGO_DB_URI = "mongodb+srv://hero:hero@cluster0.2nyzp.mongodb.net/test?retryWrites=true&w=majority"
+
+    # RECOMMENDED
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
     WEBHOOK = False
@@ -45,7 +45,7 @@ class Config(object):
     DEMONS = get_user_list("elevated_users.json", "supports")
     TIGERS = get_user_list("elevated_users.json", "tigers")
     WOLVES = get_user_list("elevated_users.json", "whitelists")
-    DONATION_LINK = None  # EG, paypal
+    DONATION_LINK = getenv("DONATION_LINK", "https://t.me/LaylaList")
     CERT_PATH = None
     PORT = 5000
     DEL_CMDS = True  # Delete commands that users dont have access to, like delete /ban if a non admin uses it.
@@ -55,16 +55,10 @@ class Config(object):
     )
     BAN_STICKER = ""  # banhammer marie sticker id, the bot will send this sticker before banning or kicking a user in chat.
     ALLOW_EXCL = True  # Allow ! commands as well as / (Leave this to true so that blacklist can work)
-    CASH_API_KEY = (
-        "WVUTR9R34VAM5LE0"  # Get your API key from https://www.alphavantage.co/support/#api-key
-    )
-    HEROKU_API_KEY = (
-        "awoo"
-    )     
+    CASH_API_KEY = ("WVUTR9R34VAM5LE0"  # Get your API key from https://www.alphavantage.co/support/#api-key )
+    HEROKU_API_KEY = ("awoo")     
     TIME_API_KEY = "4LTJHD1G5ZYD"  # Get your API key from https://timezonedb.com/api
-    WALL_API = (
-        "awoo"  # For wallpapers, get one from https://wall.alphacoders.com/api.php
-    )
+    WALL_API = ("awoo"  # For wallpapers, get one from https://wall.alphacoders.com/api.php)
     AI_API_KEY = "awoo"  # For chatbot, get one from https://coffeehouse.intellivoid.net/dashboard
     BL_CHATS = []  # List of groups that you want blacklisted.
     SPAMMERS = None
