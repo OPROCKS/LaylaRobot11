@@ -27,6 +27,8 @@ class Config(object):
     EVENT_LOGS = (-1001392103597)  # Logs Channel Id do not add the @
     DATABASE_URL = getenv("DATABASE_URL", "")
     MONGO_DB_URI = "mongodb+srv://hero:hero@cluster0.2nyzp.mongodb.net/test?retryWrites=true&w=majority"
+    HEROKU_API_KEY = getenv("HEROKU_API_KEY", "")
+    DONATION_LINK = getenv("DONATION_LINK", "https://t.me/LaylaList")
 
     # RECOMMENDED
     LOAD = []
@@ -34,11 +36,15 @@ class Config(object):
     WEBHOOK = False
     INFOPIC = True
     URL = None
+    CERT_PATH = None
+    PORT = 5000
+    STRICT_GBAN = True
     ALLOW_EXCL = True  # Allow ! commands as well as / (Leave this to true so that blacklist can work)
+    DEL_CMDS = True  # Delete commands that users dont have access to, like delete /ban if a non admin uses it.
     TEMP_DOWNLOAD_DIRECTORY = "./"
     SPAMWATCH_API = ""
     SPAMWATCH_SUPPORT_CHAT = "SpamWatchSupport"
-    HEROKU_API_KEY = ""
+    
 
     # OPTIONAL
     ##List of id's -  (not usernames) 
@@ -47,11 +53,6 @@ class Config(object):
     DEMONS = get_user_list("elevated_users.json", "supports")
     TIGERS = get_user_list("elevated_users.json", "tigers")
     WOLVES = get_user_list("elevated_users.json", "whitelists")
-    DONATION_LINK = getenv("DONATION_LINK", "https://t.me/LaylaList")
-    CERT_PATH = None
-    PORT = 5000
-    DEL_CMDS = True  # Delete commands that users dont have access to, like delete /ban if a non admin uses it.
-    STRICT_GBAN = True
     WORKERS = (
         8  # Number of subthreads to use. Set as number of threads your processor uses
     )
