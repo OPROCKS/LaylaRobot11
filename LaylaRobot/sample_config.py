@@ -16,25 +16,25 @@ class Config(object):
 
     API_ID = 1367591  # integer value, dont use ""
     API_HASH = "5d4ebdf8b500f26507cc31d2857ff668"
-    TOKEN = "1885209485:AAF4-kDzG8XA49dY1sOjbiogJloKh44CRcw"  # This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    TOKEN = "1885209485:AAEvzi2LXCB91XLEcFZkmOYtBjK7_RMb2PM"  # Your Bot Token
     OWNER_ID = 797768146  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OWNER_USERNAME = "HEROGAMERS1" 
     SUPPORT_CHAT = "AwesomeSupport"  # Your own group for support, do not add the @
     JOIN_LOGGER = (
         -1001392103597
-    )  # Prints any new group the bot is added to, prints just the name and ID.
+    )
     EVENT_LOGS = (
         -1001392103597
-    )  # Prints information like gbans, sudo promotes, AI enabled disable states that may help in debugging and shit
+    )  # Logs Channel Id
 
     # RECOMMENDED
-    SQLALCHEMY_DATABASE_URI = "something://somewhat:user@hosturl:port/databasename"  # needed for any database modules
+    SQLALCHEMY_DATABASE_URI = "something://somewhat:user@hosturl:port/databasename"
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
     WEBHOOK = False
     INFOPIC = True
     URL = None
-    SPAMWATCH_API = ""  # go to support.spamwat.ch to get key
+    SPAMWATCH_API = ""
     SPAMWATCH_SUPPORT_CHAT = "SpamWatchSupport"
 
     # OPTIONAL
