@@ -59,7 +59,9 @@ class Config(object):
         "WVUTR9R34VAM5LE0"  # Get your API key from https://www.alphavantage.co/support/#api-key 
     )  
     TIME_API_KEY = "4LTJHD1G5ZYD" # Get your API key from https://timezonedb.com/api
-    WALL_API = ("awoo"  # For wallpapers, get one from https://wall.alphacoders.com/api.php )
+    WALL_API = (
+        "awoo"  # For wallpapers, get one from https://wall.alphacoders.com/api.php 
+    )
     AI_API_KEY = "awoo"  # For chatbot, get one from https://coffeehouse.intellivoid.net/dashboard
     BL_CHATS = []  # List of groups that you want blacklisted.
     SPAMMERS = None
