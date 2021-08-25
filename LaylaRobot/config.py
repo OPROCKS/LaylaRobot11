@@ -19,7 +19,7 @@ class Config(object):
     TOKEN = "1885209485:AAEvzi2LXCB91XLEcFZkmOYtBjK7_RMb2PM"  # Your Bot Token
     OWNER_ID = 797768146  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OWNER_USERNAME = "HEROGAMERS1" 
-    BOT_ID = 
+    BOT_ID = ""
     SUPPORT_CHAT = "AwesomeSupport"  # Your own group for support, do not add the @
     JOIN_LOGGER = (-1001392103597)
     EVENT_LOGS = (-1001392103597)  # Logs Channel Id
