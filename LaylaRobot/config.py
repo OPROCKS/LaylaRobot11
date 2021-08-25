@@ -19,16 +19,14 @@ class Config(object):
     TOKEN = "1885209485:AAEvzi2LXCB91XLEcFZkmOYtBjK7_RMb2PM"  # Your Bot Token
     OWNER_ID = 797768146  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OWNER_USERNAME = "HEROGAMERS1" 
+    BOT_ID = 
     SUPPORT_CHAT = "AwesomeSupport"  # Your own group for support, do not add the @
-    JOIN_LOGGER = (
-        -1001392103597
-    )
-    EVENT_LOGS = (
-        -1001392103597
-    )  # Logs Channel Id
+    JOIN_LOGGER = (-1001392103597)
+    EVENT_LOGS = (-1001392103597)  # Logs Channel Id
 
     # RECOMMENDED
     SQLALCHEMY_DATABASE_URI = "something://somewhat:user@hosturl:port/databasename"
+    MONGO_DB_URI = ""
     LOAD = []
     NO_LOAD = ["rss", "cleaner", "connection", "math"]
     WEBHOOK = False
@@ -38,13 +36,10 @@ class Config(object):
     SPAMWATCH_SUPPORT_CHAT = "SpamWatchSupport"
 
     # OPTIONAL
-    ##List of id's -  (not usernames) for users which have sudo access to the bot.
+    ##List of id's -  (not usernames) 
     DRAGONS = get_user_list("elevated_users.json", "sudos")
-    ##List of id's - (not usernames) for developers who will have the same perms as the owner
     DEV_USERS = get_user_list("elevated_users.json", "devs")
-    ##List of id's (not usernames) for users which are allowed to gban, but can also be banned.
     DEMONS = get_user_list("elevated_users.json", "supports")
-    # List of id's (not usernames) for users which WONT be banned/kicked by the bot.
     TIGERS = get_user_list("elevated_users.json", "tigers")
     WOLVES = get_user_list("elevated_users.json", "whitelists")
     DONATION_LINK = None  # EG, paypal
@@ -60,6 +55,7 @@ class Config(object):
     CASH_API_KEY = (
         "WVUTR9R34VAM5LE0"  # Get your API key from https://www.alphavantage.co/support/#api-key
     )
+    HEROKU_API_KEY = ""
     TIME_API_KEY = "4LTJHD1G5ZYD"  # Get your API key from https://timezonedb.com/api
     WALL_API = (
         "awoo"  # For wallpapers, get one from https://wall.alphacoders.com/api.php
