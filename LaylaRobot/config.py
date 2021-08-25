@@ -55,7 +55,9 @@ class Config(object):
     CASH_API_KEY = (
         "WVUTR9R34VAM5LE0"  # Get your API key from https://www.alphavantage.co/support/#api-key
     )
-    HEROKU_API_KEY = ""
+    HEROKU_API_KEY = (
+        "awoo"
+    )     
     TIME_API_KEY = "4LTJHD1G5ZYD"  # Get your API key from https://timezonedb.com/api
     WALL_API = (
         "awoo"  # For wallpapers, get one from https://wall.alphacoders.com/api.php
