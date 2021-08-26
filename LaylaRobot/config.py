@@ -2,6 +2,9 @@
 import json
 import os
 from os import getenv
+from dotenv import load_dotenv
+
+load_dotenv("config.env")
 
 
 def get_user_list(config, key):
