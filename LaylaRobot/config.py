@@ -2,9 +2,6 @@
 import json
 import os
 from os import getenv
-from dotenv import load_dotenv
-
-load_dotenv("config.env")
 
 
 def get_user_list(config, key):
@@ -12,7 +9,6 @@ def get_user_list(config, key):
         return json.load(json_file)[key]
 
 
-# Create a new config.py or rename this to config.py file in same dir and import, then extend this class.
 class Config(object):
     LOGGER = True
     # REQUIRED
