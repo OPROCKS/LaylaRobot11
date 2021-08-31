@@ -68,7 +68,12 @@ REPLY = (
     
 @run_async
 def abuse(update: Update, context: CallbackContext):
-      update.effective_message.reply_text(random.choice(REPLY))
+    message = update.effective_message
+    abuse = random.choice(REPLY)
+    if message.reply_to_message:
+        message.reply_to_message.reply_text(abuse)
+    else:
+        message.reply_text(abuse) 
       
 ABUSE_HANDLER = DisableAbleCommandHandler("abuse", abuse)
 
