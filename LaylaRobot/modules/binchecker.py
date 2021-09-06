@@ -7,10 +7,16 @@ from pyrogram import Client, filters
 from pyrogram.types import Message
 
 
+from telethon import events
+from LaylaRobot import telethn as tbot
+from telethon.tl import functions, types
+from telethon.tl.types import *
+
+
 logging.basicConfig(level=logging.INFO)
 
 
-@bin.on(events.NewMessage(pattern="^[!?/]bin"))
+@tbot.on(events.NewMessage(pattern="/bin$"))
 async def binc(event):
     xx = await event.reply("`Processing.....`")
     try:
