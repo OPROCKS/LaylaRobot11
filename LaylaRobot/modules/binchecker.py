@@ -2,7 +2,7 @@ import requests
 from telethon import events, Button, TelegramClient
 import os
 import logging
-from LaylaRobot import pbot as bin
+from LaylaRobot import pbot
 from pyrogram import Client, filters
 from pyrogram.types import Message
 
@@ -16,7 +16,7 @@ from telethon.tl.types import *
 logging.basicConfig(level=logging.INFO)
 
 
-@tbot.on(events.NewMessage(pattern="/bin$"))
+@pbot.on_message(filters.command('bin'))
 async def binc(event):
     xx = await event.reply("`Processing.....`")
     try:
