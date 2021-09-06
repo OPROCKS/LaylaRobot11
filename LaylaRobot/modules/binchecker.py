@@ -3,6 +3,8 @@ from telethon import events, Button, TelegramClient
 import os
 import logging
 from LaylaRobot import pbot as bin
+from pyrogram import Client, filters
+from pyrogram.types import Message
 
 
 logging.basicConfig(level=logging.INFO)
