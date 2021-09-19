@@ -458,11 +458,11 @@ Bright, Circle, RemBG, Blur, Border, Flip, Glitch, Sticker maker and more
 
 
 __help__ = """
- **IMAGE EDITOR**
+ *IMAGE EDITOR*
 LaylaRobot have some advanced image editing tools inbuilt
 Bright, Circle, RemBG, Blur, Border, Flip, Glitch, Sticker maker and more
 
-- /edit [reply to image]: Open the image editor
+ ❍ /edit [reply to image]: Open the image editor
 """
 
 __mod_name__ = "Editor"
