@@ -58,7 +58,6 @@ countryinfo
 html2text
 bs4
 fontTools
-bing_image_downloader
 search_engine_parser
 pytz
 lyricsgenius
@@ -69,4 +68,5 @@ nudepy
 motor
 cloudscraper
 multicolorcaptcha
+opencv-python-headless
 
