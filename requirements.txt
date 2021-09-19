@@ -69,4 +69,4 @@ motor
 cloudscraper
 multicolorcaptcha
 opencv-python-headless
-
+markdown2>=2.4.0
