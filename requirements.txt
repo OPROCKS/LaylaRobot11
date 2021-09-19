@@ -33,7 +33,7 @@ telegraph
 heroku3
 spamwatch
 alphabet_detector
-pybase64
+bing_image_downloader
 pySmartDL
 validators
 nekos.py
