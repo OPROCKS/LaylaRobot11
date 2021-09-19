@@ -53,7 +53,7 @@ from LaylaRobot.Addons.ImageEditor.edit_5 import (  # pylint:disable=import-erro
     scanlineglitch_4,
     scanlineglitch_5,
 )
-from LaylaRobot.pyrogramee.pyrogram import pbot as Client
+from LaylaRobot import pbot as Client
 
 lel = 00000000
 # pylint:disable=import-error
