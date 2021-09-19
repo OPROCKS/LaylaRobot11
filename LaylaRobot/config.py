@@ -14,7 +14,7 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 1310191  # integer value, dont use ""
+    API_ID = int(getenv("API_ID", "1310191"))   # integer value, dont use ""
     API_HASH = "40438602d2c66851baff5eb4dc5b08bc"
     TOKEN = getenv("TOKEN", "") # Your Bot Token
     OWNER_ID = 797768146  # If you dont know, run the bot and do /id in your private chat with it, also an integer
