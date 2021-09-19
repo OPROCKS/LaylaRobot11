@@ -16,7 +16,7 @@ class Config(object):
 
     API_ID = 1310191  # integer value, dont use ""
     API_HASH = "40438602d2c66851baff5eb4dc5b08bc"
-    TOKEN = ""  # Your Bot Token
+    TOKEN = "1952988343:AAEH7wYgSpqvtqgaAJYnDA_xmZwHicHarfw"  # Your Bot Token
     OWNER_ID = 797768146  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OWNER_USERNAME = "HEROGAMERS1" 
     BOT_ID = ""
