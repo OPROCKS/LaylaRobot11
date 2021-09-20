@@ -72,4 +72,4 @@ opencv-python-headless
 markdown2>=2.4.0
 python-arq
 bing_image_downloader
-textwrap
+textwrap3
