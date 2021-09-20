@@ -18,7 +18,7 @@ geopy
 psutil
 aiohttp>=2.2.5
 CurrencyConverter
-#googletrans
+googletrans
 google_trans_new
 jikanpy
 speedtest-cli
