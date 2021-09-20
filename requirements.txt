@@ -17,7 +17,6 @@ zalgo-text
 geopy
 psutil
 aiohttp>=2.2.5
-Pillow>=4.2.0
 CurrencyConverter
 #googletrans
 google_trans_new
@@ -73,3 +72,4 @@ markdown2>=2.4.0
 python-arq
 bing_image_downloader
 textwrap3
+Pillow>=8.3.2
