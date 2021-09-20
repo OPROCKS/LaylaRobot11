@@ -80,7 +80,8 @@ ABUSE_HANDLER = DisableAbleCommandHandler("abuse", abuse)
 dispatcher.add_handler(ABUSE_HANDLER)
 
 __help__ = """
-"• /abuse - To abuse hard in hindi 
+ 
+❍ /abuse - To abuse hard in hindi 
 
 """
 
