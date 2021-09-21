@@ -1,4 +1,4 @@
-# © @Mr_Dark_Prince
+
 import aiohttp
 from pyrogram import filters
 from LaylaRobot import pbot
