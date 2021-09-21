@@ -11,7 +11,7 @@ from PIL import Image
 from pyrogram import Client
 from pyrogram.errors import FloodWait, MessageNotModified
 from pyrogram.types import Chat, Message, User
-from LaylaRobot import OWNER_ID, GBAN_LOGS, SUPPORT_CHAT
+from LaylaRobot import OWNER_ID, SUPPORT_CHAT
 from LaylaRobot import pbot
 
 
