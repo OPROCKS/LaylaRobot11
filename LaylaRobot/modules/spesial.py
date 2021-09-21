@@ -12,7 +12,7 @@ from telegram.utils.helpers import escape_markdown
 from html import escape
 from LaylaRobot.modules.helper_funcs.chat_status import is_user_ban_protected, bot_admin
 import LaylaRobot.modules.sql.users_sql as sql
-from LaylaRobot import dispatcher, OWNER_ID, SUDO_USERS, SUPPORT_USERS, LOGGER
+from LaylaRobot import dispatcher, OWNER_ID, DRAGONS, DEMONS, LOGGER
 from LaylaRobot.modules.helper_funcs.filters import CustomFilters
 
 USERS_GROUP = 4
@@ -109,7 +109,7 @@ def slist(bot: Bot, update: Update):
     message = update.effective_message
     text1 = "My Sudo Users are❤:"
     text2 = "My Support Users are🤍:"
-    for user_id in SUDO_USERS:
+    for user_id in DRAGONS:
         try:
             user = bot.get_chat(user_id)
             name = "[{}](tg://user?id={})".format(user.first_name + (user.last_name or ""), user.id)
@@ -119,7 +119,7 @@ def slist(bot: Bot, update: Update):
         except BadRequest as excp:
             if excp.message == 'Chat not found':
                 text1 += "\n - ({}) - not found".format(user_id)
-    for user_id in SUPPORT_USERS:
+    for user_id in DEMONS:
         try:
             user = bot.get_chat(user_id)
             name = "[{}](tg://user?id={})".format(user.first_name + (user.last_name or ""), user.id)
