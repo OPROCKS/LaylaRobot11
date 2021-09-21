@@ -2,7 +2,7 @@ import os
 from json import JSONDecodeError
 import requests
 from pyrogram import filters
-from LaylaRobot.pyrogramee.pluginshelper.py import admins_only, edit_or_reply, fetch_audio
+from LaylaRobot.pyrogramee.pluginshelper import admins_only, edit_or_reply, fetch_audio
 from LaylaRobot import pbot
 
 
