@@ -7,7 +7,6 @@ from pykeyboard import InlineKeyboard
 from pyrogram import filters
 from pyrogram.types import InlineKeyboardButton
 
-from LaylaRobot import aiohttpsession as session
 from LaylaRobot import pbot as app
 from LaylaRobot.utils.errors import capture_err
 from LaylaRobot.utils.pastebin import paste
