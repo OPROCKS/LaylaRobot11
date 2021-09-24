@@ -14,16 +14,16 @@ class Config(object):
     # REQUIRED
     # Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = int(getenv("API_ID", "5889620"))   # integer value, dont use ""
-    API_HASH = "33a88796f0392ae9161b18789b2cbdb6"
-    TOKEN = getenv("TOKEN", "2005829843:AAE2bGxHuY18ha3Cz24u3Y5iRLlOR86U57I") # Your Bot Token
-    OWNER_ID = 1964468738  # If you dont know, run the bot and do /id in your private chat with it, also an integer
-    OWNER_USERNAME = "broken_starrr" 
+    API_ID = int(getenv("API_ID", "7750608"))   # integer value, dont use ""
+    API_HASH = "f6de83255becba3b86a2ed6e2aa65b54"
+    TOKEN = getenv("TOKEN", "2011321413:AAHqrsGZGjE-CJ1IocfqimEFq78nvYqBIJk") # Your Bot Token
+    OWNER_ID = 1930400400  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    OWNER_USERNAME = "broken_starr" 
     BOT_ID = ""
     HEROKU_APP_NAME = ""
     SUPPORT_CHAT = "AwesomeSupport"  # Your own group for support, do not add the @
-    JOIN_LOGGER = (-1001526128811)
-    EVENT_LOGS = (-1001526128811)  # Logs Channel Id do not add the @
+    JOIN_LOGGER = (-1001559744052)
+    EVENT_LOGS = (-1001510034506)  # Logs Channel Id do not add the @
     DATABASE_URL = getenv("DATABASE_URL", "")
     MONGO_DB_URI = "mongodb+srv://hero:hero@cluster0.2nyzp.mongodb.net/test?retryWrites=true&w=majority"
     HEROKU_API_KEY = getenv("HEROKU_API_KEY", "")
